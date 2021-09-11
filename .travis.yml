@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 services:
   - docker
@@ -6,4 +7,4 @@ before_install:
   - docker build -t luo39/docker-react -f Dockerfile.dev .
 
 scripts:
-  - docker run luo39/docker-react npm run test -- --coverage
+  - docker run luo39/docker-react npm run test
