@@ -7,4 +7,4 @@ before_install:
   - docker build -t luo39/docker-react -f Dockerfile.dev .
 
 scripts:
-  - docker run luo39/docker-react yarn test -- --coverage
+  - docker run -e CI=true luo39/docker-react yarn test
